@@ -1,0 +1,55 @@
+{
+  "name": "jamstack-website",
+  "version": "0.2.1",
+  "description": "An opinionated workflow for building modern headless CMS websites",
+  "main": "index.js",
+  "scripts": {
+    "clean": "del _site",
+    "dev:css": "postcss src/css/site.css -o _site/css/site.css --watch --verbose",
+    "dev:eleventy": "eleventy --serve --watch",
+    "dev:js": "webpack --config webpack.config.js --watch",
+    "build:eleventy": "ELEVENTY_ENV=production eleventy",
+    "build:css": "cross-env NODE_ENV=production postcss src/css/site.css -o _site/css/site.css",
+    "build:js": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "analyze:build": "webpack --profile --json > _analyze.json",
+    "analyze:serve": "webpack-bundle-analyzer _analyze.json",
+    "analyze": "npm-run-all clean analyze:* --print-label",
+    "develop": "npm-run-all clean --parallel dev:* --print-label",
+    "build": "npm-run-all clean --parallel build:* --print-label"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://fephil@github.com/fephil/jamstack-website.git"
+  },
+  "keywords": [
+    "eleventy",
+    "jamstack",
+    "webpack",
+    "tailwind"
+  ],
+  "author": "Phil Lennon <enquiry@phil.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fephil/jamstack-website/issues"
+  },
+  "homepage": "https://github.com/fephil/jamstack-website#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "cssnano": "^4.1.10",
+    "del-cli": "^3.0.1",
+    "html-minifier": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
+    "tailwindcss": "^2.0.2",
+    "webpack": "^5.11.1",
+    "webpack-bundle-analyzer": "^4.3.0",
+    "webpack-cli": "^4.3.0"
+  }
+}
