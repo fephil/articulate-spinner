@@ -1,7 +1,7 @@
 {
   "name": "articulate-spinner",
   "version": "0.1.0",
-  "description": "A colour chooser for the Board Game Articulate",
+  "description": "A colour category randomiser for the board game Articulate",
   "main": "index.js",
   "scripts": {
     "clean": "del _site",
