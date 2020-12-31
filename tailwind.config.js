@@ -4,12 +4,9 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
   purge: {
-    mode: 'all',
-    content: [
-      './src/**/*.njk',
-      './.eleventy.js',
-    ]
+    mode: "all",
+    content: ["./src/**/*.njk", "./.eleventy.js"],
   },
-}
+};

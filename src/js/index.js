@@ -1,1 +1,3 @@
-console.log('test');
+import chooser from "./modules/chooser";
+
+chooser();

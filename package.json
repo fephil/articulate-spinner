@@ -1,7 +1,7 @@
 {
-  "name": "jamstack-website",
-  "version": "0.2.1",
-  "description": "An opinionated workflow for building modern headless CMS websites",
+  "name": "articulate-spinner",
+  "version": "0.1.0",
+  "description": "A colour chooser for the Board Game Articulate",
   "main": "index.js",
   "scripts": {
     "clean": "del _site",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://fephil@github.com/fephil/jamstack-website.git"
+    "url": "git+https://fephil@github.com/fephil/articulate-spinner.git"
   },
   "keywords": [
     "eleventy",
@@ -30,9 +30,9 @@
   "author": "Phil Lennon <enquiry@phil.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fephil/jamstack-website/issues"
+    "url": "https://github.com/fephil/articulate-spinner/issues"
   },
-  "homepage": "https://github.com/fephil/jamstack-website#readme",
+  "homepage": "https://github.com/fephil/articulate-spinner#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@babel/core": "^7.12.10",
@@ -48,8 +48,12 @@
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.0",
     "tailwindcss": "^2.0.2",
+    "@tailwindcss/typography": "^0.3.1",
     "webpack": "^5.11.1",
     "webpack-bundle-analyzer": "^4.3.0",
     "webpack-cli": "^4.3.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.16.1"
   }
 }

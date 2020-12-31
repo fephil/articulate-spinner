@@ -8,7 +8,29 @@ description: 'Test Description.'
 {% endblock %}
 
 {% block content %}
-<h1 class="text-3xl">Homepage Test</h1>
+<main class="">
+  <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+    <div class="px-4 py-6 border-4 border-gray-200 rounded-lg">
+      <div class="prose">
+        <h1>Articulate Spinner</h1>
+      </div>
+      <div class="md:grid grid-cols-4 gap-4 mt-12 js-chooser">
+        <div class="md:col-span-3 prose mb-8">
+          <div class="block">
+            <button type="button" class="js-chooser-spin inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+              Spin!
+            </button>
+          </div>
+
+          <div class="js-chooser-copy"></div>
+        </div>
+        <div class="md:col-span-1 prose">
+          <h3 class="">Previous Results</h3>
+          <ul class="js-chooser-results"></ul>
+        </div>
+    </div>
+  </div>
+</main>
 {% endblock %}
 
 {% block pageFoot %}
