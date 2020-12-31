@@ -6,6 +6,6 @@ module.exports = {
   variants: {},
   plugins: [require("@tailwindcss/typography")],
   purge: {
-    content: ["./src/**/*.njk", "./js/modules/**/*.js", "./.eleventy.js"],
+    content: ["./src/**/*.njk", "./src/js/modules/**/*.js", "./.eleventy.js"],
   },
 };
