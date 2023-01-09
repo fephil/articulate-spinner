@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/fephil/articulate-spinner#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^1.0.2",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "autoprefixer": "^10.1.0",
